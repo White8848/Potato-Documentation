@@ -9,7 +9,6 @@ POTATO!
 本文档是智慧土豆的教程文档，包含了所有产品的使用教程
 
 .. toctree::
-   :hidden:
 
    ESP32/index.rst
    土豆一号（暂定）/index.rst
