@@ -5,5 +5,6 @@
 
 .. toctree::
    :hidden:
-   :maxdepth: 1
+   :maxdepth: 1  
+   
    contents.md

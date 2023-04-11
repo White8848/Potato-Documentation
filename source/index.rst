@@ -11,6 +11,8 @@ POTATO!
 .. toctree::
    :hidden:
 
+   ESP32/index.rst
    土豆一号（暂定）/index.rst
    土豆二号（暂定）/index.rst
+   
 
