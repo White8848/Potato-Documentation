@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Potato'
-copyright = '2023, Yirule,Yang'
+copyright = '北京智慧土豆科技有限公司'
 author = 'Yirule'
 release = 'v0.1'
 

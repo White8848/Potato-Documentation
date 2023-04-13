@@ -1,0 +1,38 @@
+机械安装说明
+================================================
+
+巡线模块
+~~~~~~~~~~~~~
+
+.. image:: ./media/巡线传感器.png
+   :align: center
+
+电机固定螺栓
+~~~~~~~~~~~~~
+
+.. image:: ./media/电机.png
+   :align: center
+
+安装联轴器
+~~~~~~~~~~~~~
+
+.. image:: ./media/联轴器P.png
+   :align: center
+
+安装麦克纳姆轮
+~~~~~~~~~~~~~~~
+
+.. image:: ./media/麦轮X.png
+   :align: center
+
+安装电池
+~~~~~~~~~~~~~~~
+
+.. image:: ./media/电池.png
+   :align: center
+
+安装PCB
+~~~~~~~~~~~~~~~
+
+.. image:: ./media/PCB安装.png
+   :align: center
