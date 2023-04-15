@@ -10,8 +10,7 @@ POTATO!
 
 .. toctree::
 
-   ESP32/index.rst
-   土豆一号（暂定）/index.rst
-   土豆二号（暂定）/index.rst
+   ESP32/index
+   MP-0/index
    
 
