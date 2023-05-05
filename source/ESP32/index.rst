@@ -6,9 +6,10 @@ ESP32入门教程
 .. toctree::
    :maxdepth: 1
    
-   ESP32环境搭建
-   GPIO输入输出
-   电机控制
+   ESP32环境搭建.md
+   ESP32GPIO.md
+   ESP32串口.md
+   电机控制.rst
 
 想要了解更多关于ESP32的内容，请移步官网查询：
 
