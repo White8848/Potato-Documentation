@@ -1,8 +1,8 @@
-# **串口**  
+# 串口通信
 今天让我们一起来学```串口```！  
-## <table><tr><td bgcolor=LightSeaGreen> 概述</td></tr></table>  
+## 概述  
 ESP32 芯片有```3 个```UART 接口，UART0，UART1，UART2，支持异步通信和 IrDA，通信速度最高可达 5Mbps，3 个接口可以被 DMA 或 CPU 直接访问，3 个串口带发送接收 FIFO，共享 1024*8bit 的 RAM，通过串口，我们可以非常方便的跟其它外设进行通信或者打印数据。  
-## <table><tr><td bgcolor=LightSeaGreen> 硬件</td></tr></table>  
+## 硬件
 ![](media3/ESP1.jpg)  
 
 上图是硬件参考设计，我把默认的串口标注出来了，我们可以在Arduino的库中看到默认的引脚，如下图：
@@ -41,7 +41,7 @@ U0TXD 线上需串联 499 Ω 电阻用于抑制 80 MHz 谐波。ESP32 UART 串�
 ![](media3/ESP4.jpg)  
 
 这里还需要注意下，UART1的默认引脚为GPIO9,、GPIO10，这两个接口一般用于连接外部Flash，程序中默认使用这两个引脚的，```所以我们在用的时候一定记得改到别的IO口```。  
-## <table><tr><td bgcolor=LightSeaGreen> 软件</td></tr></table>  
+## 软件 
 关于串口的一些概念，包括原理，波特率，停止位，奇偶校验，流控等概念，这些概念非常基础，这里就不展开篇幅说了，需要的小伙伴自行了解，不同芯片，原理都是一样的。
 
 我们讲一下```基础的使用```：

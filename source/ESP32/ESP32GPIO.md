@@ -1,9 +1,9 @@
-# **GPIO数字输入与数字输出**  
+# GPIO数字输入与数字输出  
 让我们一起来点灯！  
- ## <table><tr><td bgcolor=tomato> 多路复用器与GPIO矩阵</td></tr></table>  
- ESP32芯片有34个物理 GPIO Pad，```每个Pad可以当作通用IO，也可以当作外设的引脚```，GPIO 引脚通过非常复杂的 GPIO 矩阵互连，这基本上就是是一个多路复用器，我们可以```非常灵活的选择哪些GPIO引脚在内部路由到哪个外设的信号```，大家可以看下图：  
+## 多路复用器与GPIO矩阵
+ESP32芯片有34个物理 GPIO Pad，```每个Pad可以当作通用IO，也可以当作外设的引脚```，GPIO 引脚通过非常复杂的 GPIO 矩阵互连，这基本上就是是一个多路复用器，我们可以```非常灵活的选择哪些GPIO引脚在内部路由到哪个外设的信号```，大家可以看下图：  
 
- ![](media2/ESP1.jpg)  
+![](media2/ESP1.jpg)  
 
 IO_MUX 中每个 GPIO pad 有一组寄存器。每个 pad 可以配置成 GPIO 功能(连接 GPIO 交换矩阵)或者 直连功能。
 
@@ -26,9 +26,9 @@ ESP32还有18个 GPIO 管脚具有低功耗(低功耗 RTC)和模拟功能。
 **特别提醒**
 
 ESP32的IO12上电时的电平会决定外部flash的工作电压，上电时该脚为高则认为flash工作于1.8V，为低则认为flash工作于3.3V。```常用的模块该脚内部已下拉```，即flash是工作于3.3V的，若外部使用强上拉模块就可能工作异常了。  
- ## <table><tr><td bgcolor=tomato> 硬件连接</td></tr></table>   
+ ## 硬件连接   
  ![](media2/ESP4.jpg "硬件连接")  
-## <table><tr><td bgcolor=tomato> 数字输出功能</td></tr></table>  
+## 数字输出功能 
 这里我们就以一个LED灯来演示，首先，我们需要在setup()中初始化对应的IO在输出模式，使用pinMode函数，第一个参数上对应的IO序号，第二个是IO的模式 。 
 
 ```pinMode(4, OUTPUT);```
@@ -39,7 +39,7 @@ digitalWrite(4, HIGH); // 输出高电平
 digitalWrite(4, LOW);  // 输出低电平  
 ```  
 所有 ESP32 GPIO 引脚都可以在输入或输出模式下运行。引脚34-39只能用于输入。还有其他一些引脚也有其它特性，这个我们现在也没必要太纠结，用到的时候再去看就好了。  
-## <table><tr><td bgcolor=tomato> 数字输入功能</td></tr></table>   
+## 数字输入功能 
 在输入模式下，我们可以通过IO来读取外部数字信号，我们这里用按键来表示。
 
 跟输出模式一样，我们在setup()中初始化对应的IO在输入模式，也使用pinMode函数。  
@@ -47,7 +47,7 @@ digitalWrite(4, LOW);  // 输出低电平
 ```pinMode(2, INPUT);```
 
 然后通过digitalRead(GPIO_pin)就可以读取对应IO的电平了。
-## <table><tr><td bgcolor=tomato> 代码示例</td></tr></table>   
+## 代码示例   
 下面的代码我们定义了2个GPIO引脚。GPIO2用于按键输入，GPIO4用于LED输出。  
 
 初始化之后，我们在loop()中不断的读取按键的电平状态，并赋值给LED，实现按键下去灯熄灭，松开灯点亮的效果。  
