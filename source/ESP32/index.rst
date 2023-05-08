@@ -26,6 +26,7 @@ ESP32 芯片是由乐鑫公司继 ESP8266 芯片后推出的又一款集成 WiFi
    ESP32环境搭建.md
    ESP32GPIO.md
    ESP32串口.md
+   ESP32控制OLED.rst
    电机控制.rst
 
 想要了解更多关于ESP32的内容，请移步官网查询：
