@@ -21,7 +21,7 @@ ESP32 芯片是由乐鑫公司继 ESP8266 芯片后推出的又一款集成 WiFi
 本教程是为了帮助大家快速入门ESP32，本教程的内容包括：
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 5
    
    ESP32环境搭建.md
    ESP32GPIO.md

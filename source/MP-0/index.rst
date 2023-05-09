@@ -7,7 +7,6 @@ Mashed Potato Zero(MP-0)是北京智慧土豆科技有限公司研发的首款�
    :align: center
    
 .. toctree::
-   :hidden:
    :maxdepth: 5
    
    原理图
